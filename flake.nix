@@ -40,15 +40,9 @@
 
           inherit buildInputs nativeBuildInputs;
 
-          configurePhase = ''
-            cmake -S . -B cmake-build -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo
-          '';
-          buildPhase = ''
-            cmake --build cmake-build
-          '';
-          installPhase = ''
-            cmake --install cmake-build --prefix $out
-          '';
+          cmakeGenerator = "Ninja";
+          cmakeBuildType = "RelWithDebInfo";
+          dontStrip = true;
         };
 
         devShells.default = pkgs.mkShell {
@@ -58,7 +52,6 @@
             clang-tools
             gdb
             gcc16
-            fastddsgen
           ];
         };
       };
