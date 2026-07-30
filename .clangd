@@ -1,0 +1,6 @@
+CompileFlags:
+  CompilationDatabase: build
+  Remove: [-fmodules-ts, -fmodule-mapper=*, -fdeps-format=*]
+
+Diagnostics:
+  Suppress: [module_not_found]

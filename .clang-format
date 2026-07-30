@@ -1,0 +1,16 @@
+Language: Cpp
+BasedOnStyle: LLVM
+LineEnding: LF
+ColumnLimit: 80
+MaxEmptyLinesToKeep: 2
+AllowShortFunctionsOnASingleLine: Inline
+AlignOperands: DontAlign
+AlignAfterOpenBracket: BlockIndent
+ContinuationIndentWidth: 4
+InsertBraces: true
+AlwaysBreakBeforeMultilineStrings: true
+BreakTemplateDeclarations: true
+AllowShortIfStatementsOnASingleLine: WithoutElse 
+AllowShortBlocksOnASingleLine: Always
+AllowShortLambdasOnASingleLine: All
+CommentPragmas: '^ NOLINT'
